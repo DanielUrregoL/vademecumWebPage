@@ -1,6 +1,6 @@
 import axios from "axios";
 //RUTA 
-const url = "http://localhost:9000/api/usuarios";
+const url = "http://18.205.25.246:9000/api/usuarios";
 //TRAER TODO LOS USUARIOS REGISTRADOS
 
 const Usuarios = async (estado) => {
