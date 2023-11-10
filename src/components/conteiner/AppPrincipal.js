@@ -37,7 +37,7 @@ export default function AppPrincipal() {
 
         return (
             <div key={customKey} className="card col-3 m-3 " onClick={(e) => setSelectedTheme(customKey)}  style={{ height: "700px", width: "400px" }}>
-                <img src={"http://18.205.25.246:9000" + categoria.imgCategoria} className="card-img-top" alt="..." />
+                <img src={"http://localhost:9000" + categoria.imgCategoria} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h3 className="card-title text-center">{categoria.nombreCategoria}</h3>
                     <p className="card-text text-start">{categoria.infoCategoria}</p>
@@ -50,7 +50,7 @@ export default function AppPrincipal() {
         <div key={medicamento._id} className="card col-8 m-5 p-5">
         <div className="row">
             <div className="col-md-6">
-                <img src={"http://18.205.25.246:9000" + medicamento.imgMedicamento} className="img-fluid rounded-start" alt="..." />
+                <img src={"http://localhost:9000" + medicamento.imgMedicamento} className="img-fluid rounded-start" alt="..." />
             </div>
             <div className="col-md-6">
                 <div className="card-body">
@@ -84,7 +84,7 @@ export default function AppPrincipal() {
                     ...info,
                     infoCategoria: (
                         <div key={existeCategoria._id} className="card col-11 m-5 p-5">
-                            <img src={"http://18.205.25.246:9000" + existeCategoria.imgCategoria} className="card-img-top" alt="..." />
+                            <img src={"http://localhost:9000" + existeCategoria.imgCategoria} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h3 className="card-title text-center">{existeCategoria.nombreCategoria}</h3>
                                 <p className="card-text text-start">{existeCategoria.infoCategoria}</p>
@@ -105,7 +105,7 @@ export default function AppPrincipal() {
                     ...info,
                     infoCategoria: (
                         <div key={existeCategoria._id} className="card col-11 m-5 p-5">
-                            <img src={"http://18.205.25.246:9000" + existeCategoria.imgCategoria} className="card-img-top" alt="..." />
+                            <img src={"http://localhost:9000" + existeCategoria.imgCategoria} className="card-img-top" alt="..." />
                             <br />
                             <div className="card-body">
                                 <h1 className="card-title text-center">{existeCategoria.nombreCategoria}</h1>
@@ -119,7 +119,7 @@ export default function AppPrincipal() {
                             <div key={medicamento._id} className="card col-9 m-5 p-5">
                                 <div className="row">
                                     <div className="col-md-7">
-                                        <img src={"http://18.205.25.246:9000" + medicamento.imgMedicamento} className="img-fluid rounded-start" alt="..." />
+                                        <img src={"http://localhost:9000" + medicamento.imgMedicamento} className="img-fluid rounded-start" alt="..." />
                                     </div>
                                     <div className="col-md-5">
                                         <div className="card-body">

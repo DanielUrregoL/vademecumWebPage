@@ -283,7 +283,7 @@ export default function Admin() {
                     const fileName = filePath.substring(filePath.lastIndexOf("\\") + 1);
                     fieldsWithValues.imgMedicamento = "/uploads/" + fileName;
                     console.log(fileName);
-                } if (selectCategoria === undefined || selectCategoria.length === []) {
+                } if (selectCategoria === undefined || selectCategoria.length === 0) {
                     fieldsWithValues.categoria = existe.categoria;
                 } else {
                     const aux = selectCategoria.map((categoria) => categoria.value);
